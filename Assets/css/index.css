@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --FontSizeDefault: 10px;
+    --White: #fff;
+    --FontJosefin: "Josefin Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: var(--FontSizeDefault);
+    font-family: var(--FontJosefin);
+}
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: var(--White);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
