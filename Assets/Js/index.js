@@ -68,6 +68,25 @@ input.addEventListener("keydown", function(event) {
             croix.addEventListener("click", () =>{
                 element.removeChild(newelement)
             })
+                        //cocher les taches
+                        let select = newelement.querySelector("#select")
+                        let checkimg1 = newelement.querySelector("#checkimg1")
+                        let p = newelement.querySelector("#text")
+                        select.addEventListener("click" , () => {
+                            if(checkimg1.style.display==="none"){
+                                p.style.textDecoration = "line-through"
+                                checkimg1.style.display = "flex"
+                                p.style.color = "#B0B0B0"
+                                select.style.backgroundImage = "linear-gradient(to bottom, #3710BD , #A42395)"
+                            }
+                            else{
+                                p.style.textDecoration = "none"
+                                checkimg1.style.display = "none"
+                                p.style.color = "black "
+                                select.style.backgroundImage =""//reinicialiser la couleur du texte
+                            }
+                        })
+            
         }
         else{
             alert("le nom de la tache doit contenir au moins 5 caracteres")
